@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercices sur les inéquations - Niveau Seconde</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #2980b9;
+            margin-top: 30px;
+            padding-bottom: 5px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        h3 {
+            color: #3498db;
+            margin-top: 25px;
+        }
+        
+        .exercice-box {
+            background-color: #fff;
+            border-left: 5px solid #3498db;
+            padding: 15px 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .solution-container {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .accordion {
+            background-color: #3498db;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: 0.4s;
+            border-radius: 5px;
+        }
+        
+        .accordion:hover {
+            background-color: #2980b9;
+        }
+        
+        .panel {
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            border-radius: 0 0 5px 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .panel-content {
+            padding: 20px;
+        }
+        
+        .step {
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #2980b9;
+        }
+        
+        .step-title {
+            font-weight: bold;
+            color: #2980b9;
+            margin-bottom: 10px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .conclusion {
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+            border-left: 3px solid #3498db;
+        }
+        
+        .exercice-nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .exercice-nav a {
+            display: inline-block;
+            background-color: #2980b9;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 5px;
+            flex-grow: 1;
+            text-align: center;
+        }
+        
+        .exercice-nav a:hover {
+            background-color: #3498db;
+        }
+        
+        .important-note {
+            background-color: #ffe8e8;
+            border-left: 3px solid #e74c3c;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .note {
+            background-color: #f7f9fa;
+            border-left: 3px solid #7f8c8d;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        
+        .factorisation-method {
+            background-color: #e8f8f5;
+            border-left: 3px solid #1abc9c;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercices sur les inéquations - Niveau Seconde</h1>
+    
+    <div class="exercice-nav">
+        <a href="#exercice1">Exercice 1: Fraction</a>
+        <a href="#exercice2">Exercice 2: Identité remarquable</a>
+        <a href="#exercice3">Exercice 3: Fonction carré</a>
+        <a href="#exercice4">Exercice 4: Fonction cube</a>
+    </div>
+    
+    <div id="exercice1" class="exercice-box">
+        <h2>Exercice 1: Fraction</h2>
+        <p>Résoudre l'inéquation suivante :</p>
+        <p style="text-align: center; font-size: 1.2em;">\(\frac{5}{x} > 2\)</p>
+    </div>
+    
+    <div class="solution-container">
+        <button class="accordion">Cliquez ici pour voir la solution</button>
+        <div class="panel">
+            <div class="panel-content">
+                <h3>Solution détaillée</h3>
+                
+                <div class="step">
+                    <div class="step-title">Étape 1 : Mettre l'inéquation sous la forme d'une fraction positive</div>
+                    <p>On transforme l'inéquation pour avoir la forme "expression > 0" :</p>
+                    <p>\(\frac{5}{x} > 2\)</p>
+                    <p>\(\frac{5}{x} - 2 > 0\)</p>
+                    <p>\(\frac{5 - 2x}{x} > 0\)</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-title">Étape 2 : Déterminer les valeurs qui annulent le numérateur et le dénominateur</div>
+                    <p>Pour le numérateur : \(5 - 2x = 0\)</p>
+                    <ul>
+                        <li>\(2x = 5\)</li>
+                        <li>\(x = \frac{5}{2}\)</li>
+                    </ul>
+                    <p>Pour le dénominateur : \(x = 0\)</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-title">Étape 3 : Établir le tableau de signe</div>
+                    <p>Ces valeurs (0 et \(\frac{5}{2}\)) divisent l'axe des réels en trois intervalles : \(]-\infty ; 0[\), \(]0 ; \frac{5}{2}[\) et \(]\frac{5}{2} ; +\infty[\)</p>
+                    
+                    <table>
+                        <tr>
+                            <td>\(x\)</td>
+                            <td>\(-\infty\)</td>
+                            <td></td>
+                            <td>\(0\)</td>
+                            <td></td>
+                            <td>\(\frac{5}{2}\)</td>
+                            <td></td>
+                            <td>\(+\infty\)</td>
+                        </tr>
+                        <tr>
+                            <td>\(x\)</td>
+                            <td></td>
+                            <td>\(-\)</td>
+                            <td>\(0\)</td>
+                            <td>\(+\)</td>
+                            <td></td>
+                            <td>\(+\)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>\(5 - 2x\)</td>
+                            <td></td>
+                            <td>\(+\)</td>
+                            <td></td>
+                            <td>\(+\)</td>
+                            <td>\(0\)</td>
+                            <td>\(-\)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>\(\frac{5 - 2x}{x}\)</td>
+                            <td></td>
+                            <td>\(-\)</td>
+                            <td>interdit</td>
+                            <td>\(+\)</td>
+                            <td>\(0\)</td>
+                            <td>\(-\)</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="conclusion">
+                    <div class="step-title">Étape 4 : Conclusion</div>
+                    <p>L'expression \(\frac{5 - 2x}{x}\) est strictement positive sur l'intervalle \(]0 ; \frac{5}{2}[\).</p>
+                    <p>L'ensemble solution de l'inéquation \(\frac{5}{x} > 2\) est donc : \(S = ]0 ; \frac{5}{2}[\)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="exercice2" class="exercice-box">
+        <h2>Exercice 2: Identité remarquable</h2>
+        <p>Résoudre l'inéquation suivante :</p>
+        <p style="text-align: center; font-size: 1.2em;">\((x+3)^2 - 16 \geq 0\)</p>
+    </div>
+    
+    <div class="solution-container">
+        <button class="accordion">Cliquez ici pour voir la solution</button>
+        <div class="panel">
+            <div class="panel-content">
+                <h3>Solution détaillée</h3>
+                
+                <div class="step">
+                    <div class="step-title">Étape 1 : Utiliser l'identité remarquable pour développer l'expression</div>
+                    <p>\((x+3)^2 - 16 \geq 0\)</p>
+                    <p>On utilise l'identité remarquable \((a+b)^2 = a^2 + 2ab + b^2\) :</p>
+                    <p>\((x+3)^2 - 16 = x^2 + 2 \times 3 \times x + 3^2 - 16\)</p>
+                    <p>\((x+3)^2 - 16 = x^2 + 6x + 9 - 16\)</p>
+                    <p>\((x+3)^2 - 16 = x^2 + 6x - 7\)</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-title">Étape 2 : Factoriser l'expression</div>
+                    <p>On cherche à factoriser \(x^2 + 6x - 7\) sous la forme \((x+a)(x+b)\).</p>
+                    
+                    <div class="factorisation-method">
+                        <p><strong>Méthode pour factoriser un trinôme de la forme \(x^2 + px + q\) :</strong></p>
+                        <p>1. On cherche deux nombres \(a\) et \(b\) tels que :</p>
+                        <ul>
+                            <li>\(a + b = p\) (la somme donne le coefficient de \(x\))</li>
+                            <li>\(a \times b = q\) (le produit donne le terme constant)</li>
+                        </ul>
+                        <p>2. Si on trouve de tels nombres, alors \(x^2 + px + q = (x+a)(x+b)\)</p>
+                    </div>
+                    
+                    <p>Dans notre cas, pour \(x^2 + 6x - 7\), on cherche \(a\) et \(b\) tels que :</p>
+                    <ul>
+                        <li>\(a + b = 6\) (somme)</li>
+                        <li>\(a \times b = -7\) (produit)</li>
+                    </ul>
+                    
+                    <p>Puisque le produit est négatif (\(-7\)) et la somme positive (\(6\)), on sait que:</p>
+                    <ul>
+                        <li>Un des nombres est positif (appelons-le \(a\))</li>
+                        <li>L'autre est négatif (appelons-le \(b\))</li>
+                        <li>Le nombre positif a une valeur absolue plus grande que le nombre négatif (puisque la somme est positive)</li>
+                    </ul>
+                    
+                    <p>Les diviseurs de 7 sont 1 et 7. On teste les paires possibles:</p>
+                    <ul>
+                        <li>\(1 \times (-7) = -7\) et \(1 + (-7) = -6\) ❌ (la somme n'est pas 6)</li>
+                        <li>\(7 \times (-1) = -7\) et \(7 + (-1) = 6\) ✓ (la somme est bien 6)</li>
+                    </ul>
+                    
+                    <p>Donc \(a = 7\) et \(b = -1\), ce qui nous donne:</p>
+                    <p>\(x^2 + 6x - 7 = (x+7)(x-1)\)</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-title">Étape 3 : Résoudre l'inéquation</div>
+                    <p>Notre inéquation devient :</p>
+                    <p>\((x+7)(x-1) \geq 0\)</p>
+                    <p>Pour que le produit de deux facteurs soit positif ou nul, il faut que :</p>
+                    <ul>
+                        <li>soit les deux facteurs sont de même signe (tous les deux positifs ou nuls, ou tous les deux négatifs ou nuls)</li>
+                        <li>soit au moins un des facteurs est égal à zéro</li>
+                    </ul>
+                    <p>Nous devons déterminer les valeurs qui annulent ces facteurs :</p>
+                    <ul>
+                        <li>\(x+7 = 0 \Rightarrow x = -7\)</li>
+                        <li>\(x-1 = 0 \Rightarrow x = 1\)</li>
+                    </ul>
+                </div>
+                
+                <div class="step">
+                    <div class="step-title">Étape 4 : Établir le tableau de signe</div>
+                    <p>Ces valeurs (-7 et 1) divisent l'axe des réels en trois intervalles : \(]-\infty ; -7[\), \(]-7 ; 1[\) et \(]1 ; +\infty[\)</p>
+                    
+                    <table>
+                        <tr>
+                            <td>\(x\)</td>
+                            <td>\(-\infty\)</td>
+                            <td></td>
+                            <td>\(-7\)</td>
+                            <td></td>
+                            <td>\(1\)</td>
+                            <td></td>
+                            <td>\(+\infty\)</td>
+                        </tr>
+                        <tr>
+                            <td>\(x+7\)</td>
+                            <td></td>
+                            <td>\(-\)</td>
+                            <td>\(0\)</td>
+                            <td>\(+\)</td>
+                            <td></td>
+                            <td>\(+\)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>\(x-1\)</td>
+                            <td></td>
+                            <td>\(-\)</td>
+                            <td></td>
+                            <td>\(-\)</td>
+                            <td>\(0\)</td>
+                            <td>\(+\)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>\((x+7)(x-1)\)</td>
+                            <td></td>
+                            <td>\(+\)</td>
+                            <td>\(0\)</td>
+                            <td>\(-\)</td>
+                            <td>\(0\)</td>
+                            <td>\(+\)</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="conclusion">
+                    <div class="step-title">Étape 5 : Conclusion</div>
+                    <p>L'expression \((x+7)(x-1)\) est positive ou nulle sur les intervalles \(]-\infty ; -7]\), \([1 ; +\infty[\) et aux points \(x = -7\) et \(x = 1\) où elle s'annule.</p>
+                    <p>L'ensemble solution de l'inéquation \((x+3)^2 - 16 \geq 0\) est donc : \(S = ]-\infty ; -7] \cup [1 ; +\infty[\)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="exercice3" class="exercice-box">
+        <h2>Exercice 3: Fonction carré</h2>
+        <p>Résoudre l'inéquation suivante :</p>
+        <p style="text-align: center; font-size: 1.2em;">\(x^2 - 5x + 6 > 0\)</p>
+    </div>
+    
+    <div class="solution-container">
+        <button class="accordion">Cliquez ici pour voir la solution</button>
+        <div class="panel">
+            <div class="panel-content">
+                <h3>Solution détaillée</h3>
+                
+                <div class="step">
+                    <div class="step-title">Étape 1 : Factoriser l'expression</div>
+                    <p>On cherche à factoriser le trinôme \(x^2 - 5x + 6\) sous la forme \((x+a)(x+b)\).</p>
+                    
+                    <div class="factorisation-method">
+                        <p><strong>Méthode pour factoriser un trinôme de la forme \(x^2 + px + q\) :</strong></p>
+                        <p>1. On cherche deux nombres \(a\) et \(b\) tels que :</p>
+                        <ul>
+                            <li>\(a + b = p\) (coefficient de \(x\))</li>
+                            <li>\(a \times b = q\) (terme constant)</li>
+                        </ul>
+                        <p>2. Si on trouve de tels nombres, alors \(x^2 + px + q = (x+a)(x+b)\)</p>
+                    </div>
+                    
+                    <p>Dans notre cas, pour \(x^2 - 5x + 6\), on cherche \(a\) et \(b\) tels que :</p>
+                    <ul>
+                        <li>\(a + b = -5\) (coefficient de \(x\))</li>
+                        <li>\(a \times b = 6\) (terme constant)</li>
+                    </ul>
+                    
+                    <p>Puisque le produit est positif (\(6\)) et la somme négative (\(-5\)), \(a\) et \(b\) sont tous deux négatifs.</p>
+                    <p>Les diviseurs de 6 sont : 1, 2, 3 et 6. On teste les paires possibles avec des signes négatifs :</p>
+                    <ul>
+                        <li>\((-1) \times (-6) = 6\) et \((-1) + (-6) = -7\) ❌ (la somme n'est pas -5)</li>
+                        <li>\((-2) \times (-3) = 6\) et \((-2) + (-3) = -5\) ✓ (la somme est bien -5)</li>
+                    </ul>
+                    
+                    <p>Donc \(a = -2\) et \(b = -3\), ce qui nous donne :</p>
+                    <p>\(x^2 - 5x + 6 = (x+(-2))(x+(-3)) = (x-2)(x-3)\)</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-title">Étape 2 : Résoudre l'inéquation</div>
+                    <p>Notre inéquation devient :</p>
+                    <p>\((x-2)(x-3) > 0\)</p>
+                    <p>Pour que le produit de deux facteurs soit strictement positif, il faut que les deux facteurs soient de même signe (soit tous les deux positifs, soit tous les deux négatifs).</p>
+                    <p>Nous devons déterminer les valeurs qui annulent ces facteurs :</p>
+                    <ul>
+                        <li>\(x-2 = 0 \Rightarrow x = 2\)</li>
+                        <li>\(x-3 = 0 \Rightarrow x = 3\)</li>
+                    </ul>
+                </div>
+                
+                <div class="step">
+                    <div class="step-title">Étape 3 : Établir le tableau de signe</div>
+                    <p>Ces valeurs (2 et 3) divisent l'axe des réels en trois intervalles : \(]-\infty ; 2[\), \(]2 ; 3[\) et \(]3 ; +\infty[\)</p>
+                    
+                    <table>
+                        <tr>
+                            <td>\(x\)</td>
+                            <td>\(-\infty\)</td>
+                            <td></td>
+                            <td>\(2\)</td>
+                            <td></td>
+                            <td>\(3\)</td>
+                            <td></td>
+                            <td>\(+\infty\)</td>
+                        </tr>
+                        <tr>
+                            <td>\(x-2\)</td>
+                            <td></td>
+                            <td>\(-\)</td>
+                            <td>\(0\)</td>
+                            <td>\(+\)</td>
+                            <td></td>
+                            <td>\(+\)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>\(x-3\)</td>
+                            <td></td>
+                            <td>\(-\)</td>
+                            <td></td>
+                            <td>\(-\)</td>
+                            <td>\(0\)</td>
+                            <td>\(+\)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>\((x-2)(x-3)\)</td>
+                            <td></td>
+                            <td>\(+\)</td>
+                            <td>\(0\)</td>
+                            <td>\(-\)</td>
+                            <td>\(0\)</td>
+                            <td>\(+\)</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="conclusion">
+                    <div class="step-title">Étape 4 : Conclusion</div>
+                    <p>L'expression \((x-2)(x-3)\) est strictement positive sur les intervalles \(]-\infty ; 2[\) et \(]3 ; +\infty[\).</p>
+                    <p>L'ensemble solution de l'inéquation \(x^2 - 5x + 6 > 0\) est donc : \(S = ]-\infty ; 2[ \cup ]3 ; +\infty[\)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="exercice4" class="exercice-box">
+        <h2>Exercice 4: Fonction cube</h2>
+        <p>Résoudre l'inéquation suivante :</p>
+        <p style="text-align: center; font-size: 1.2em;">\(x^3 - 4x > 0\)</p>
+    </div>
+    
+    <div class="solution-container">
+        <button class="accordion">Cliquez ici pour voir la solution</button>
+        <div class="panel">
+            <div class="panel-content">
+                <h3>Solution détaillée</h3>
+                
+                <div class="step">
+                    <div class="step-title">Étape 1 : Factoriser l'expression</div>
+                    <p>On commence par factoriser l'expression en mettant \(x\) en facteur :</p>
+                    <p>\(x^3 - 4x = x(x^2 - 4)\)</p>
+                    
+                    <p>Dans le second facteur \(x^2 - 4\), on reconnaît une identité remarquable de la forme \(a^2 - b^2\).</p>
+                    <p>Rappel : \(a^2 - b^2 = (a-b)(a+b)\)</p>
+                    
+                    <p>Avec \(a = x\) et \(b = 2\), on a :</p>
+                    <p>\(x^2 - 4 = x^2 - 2^2 = (x-2)(x+2)\)</p>
+                    
+                    <p>Donc l'expression complète devient :</p>
+                    <p>\(x^3 - 4x = x(x^2 - 4) = x(x-2)(x+2)\)</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-title">Étape 2 : Résoudre l'inéquation</div>
+                    <p>Notre inéquation devient :</p>
+                    <p>\(x(x-2)(x+2) > 0\)</p>
+                    <p>Pour que le produit de trois facteurs soit strictement positif, il faut qu'il y ait un nombre pair de facteurs négatifs (soit 0, soit 2).</p>
+                    <p>Nous devons déterminer les valeurs qui annulent ces facteurs :</p>
+                    <ul>
+                        <li>\(x = 0\)</li>
+                        <li>\(x-2 = 0 \Rightarrow x = 2\)</li>
+                        <li>\(x+2 = 0 \Rightarrow x = -2\)</li>
+                    </ul>
+                </div>
+                
+                <div class="step">
+                    <div class="step-title">Étape 3 : Établir le tableau de signe</div>
+                    <p>Ces valeurs (-2, 0 et 2) divisent l'axe des réels en quatre intervalles : \(]-\infty ; -2[\), \(]-2 ; 0[\), \(]0 ; 2[\) et \(]2 ; +\infty[\)</p>
+                    
+                    <table>
+                        <tr>
+                            <td>\(x\)</td>
+                            <td>\(-\infty\)</td>
+                            <td></td>
+                            <td>\(-2\)</td>
+                            <td></td>
+                            <td>\(0\)</td>
+                            <td></td>
+                            <td>\(2\)</td>
+                            <td></td>
+                            <td>\(+\infty\)</td>
+                        </tr>
+                        <tr>
+                            <td>\(x\)</td>
+                            <td></td>
+                            <td>\(-\)</td>
+                            <td></td>
+                            <td>\(-\)</td>
+                            <td>\(0\)</td>
+                            <td>\(+\)</td>
+                            <td></td>
+                            <td>\(+\)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>\(x-2\)</td>
+                            <td></td>
+                            <td>\(-\)</td>
+                            <td></td>
+                            <td>\(-\)</td>
+                            <td></td>
+                            <td>\(-\)</td>
+                            <td>\(0\)</td>
+                            <td>\(+\)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>\(x+2\)</td>
+                            <td></td>
+                            <td>\(-\)</td>
+                            <td>\(0\)</td>
+                            <td>\(+\)</td>
+                            <td></td>
+                            <td>\(+\)</td>
+                            <td></td>
+                            <td>\(+\)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>\(x(x-2)(x+2)\)</td>
+                            <td></td>
+                            <td>\(-\)</td>
+                            <td>\(0\)</td>
+                            <td>\(+\)</td>
+                            <td>\(0\)</td>
+                            <td>\(-\)</td>
+                            <td>\(0\)</td>
+                            <td>\(+\)</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="conclusion">
+                    <div class="step-title">Étape 4 : Conclusion</div>
+                    <p>L'expression \(x(x-2)(x+2)\) est strictement positive sur les intervalles \(]-2 ; 0[\) et \(]2 ; +\infty[\).</p>
+                    <p>L'ensemble solution de l'inéquation \(x^3 - 4x > 0\) est donc : \(S = ]-2 ; 0[ \cup ]2 ; +\infty[\)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var acc = document.getElementsByClassName("accordion");
+            
+            for (var i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    } 
+                });
+            }
+        });
+    </script>
+</body>
+</html>
